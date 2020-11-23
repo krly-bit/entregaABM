@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> ABM Productos</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1> Crear Productos</h1>
+    <form method="post" action="/products/agregar">
+       
+        <p>
+        <label for="id"> ID</label>
+        <input type="number" name="id" id="id">
+        </p>
+        <p>
+        <label for="productName"> Nombre producto</label>
+        <input type="text" name="productName" id="productName">
+        </p>
+        <p>
+       <label for="precio"> Precio</label>
+       <input type="number" name="precio" id="precio">
+
+        </p>
+        <p>
+        <label for="description"> Descripción del producto</label>
+      <textarea name="description" id="description"></textarea> 
+      </p>
+      <p>
+       <label for="marca"> Marca</label>
+       <input type="text" name="marca" id="marca">
+      </p>
+      <p>
+          <label for="stock"> Cantidad</label>
+          <input type="number" name="stock" id="stock">
+      </p>
+      <p>
+          <input type="submit" value="enviar">
+      </p>
+    </form>
+
+  </body>
+</html>
